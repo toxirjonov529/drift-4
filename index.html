@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>DRIFT RACING</title>
+</head>
+<body>
+<div id="app"></div>
+<div id="loading"><h1>DRIFT <span>RACING</span></h1><div class="bar"><i id="bar-fill"></i></div><p id="load-text">Yuklanmoqda...</p></div>
+<div id="hud" hidden>
+<div class="tl"><small>DRIFT SCORE</small><b id="h-cur">0</b><span id="h-combo">x1.0</span><small>TOTAL</small><b id="h-total">0</b></div>
+<div class="tr"><b id="h-pos" class="pos">1ST</b><small>AYLANISH <i id="h-lap">—</i></small><small>TIMER</small><b id="h-time">0:00.00</b><small>BURCHAK <i id="h-angle">0°</i></small></div>
+<div class="br gauge"><svg viewBox="0 0 120 120"><circle class="gb" cx="60" cy="60" r="50"/><circle id="h-arc" class="ga" cx="60" cy="60" r="50"/></svg><b id="h-speed">0</b><small>KM/H</small><em id="h-gear">N</em><div class="nb"><i id="h-nitro"></i></div></div>
+<div id="hint"><b>W/S</b> gaz/tormoz &nbsp; <b>A/D</b> burilish &nbsp; <b>Space</b> qo'l tormozi &nbsp; <b>Shift</b> nitro &nbsp; <b>C</b> kamera &nbsp; <b>R</b> qayta &nbsp; <b>Esc</b> pauza</div>
+<div class="touch"><div id="wheel"></div><div class="right"><div class="mini"><button data-k="nitro">N2O</button><button data-k="hand">HB</button></div><div class="pedals"><button data-k="brake" class="brk">TORMOZ</button><button data-k="gas" class="gas">GAZ</button></div></div></div>
+</div>
+<div id="error" hidden></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
